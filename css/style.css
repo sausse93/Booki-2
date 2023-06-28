@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    cursor: default;
+    
 }
 
 :root {
@@ -16,6 +18,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
 .main-container {
@@ -49,9 +52,143 @@ body {
     font-weight: 700;
 }
 
-.neutralStar {
+.neutral-star {
     color: var(--main-bg-color)
 }
+main,footer {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    cursor: grab;
+}
+
+/********Header*********/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0%;
+    
+}
+.lien {
+    display: flex;
+    justify-content: space-around;
+    align-items:start;
+    width: 34%;
+    height: 100%;
+    
+    
+}
+.nav-lien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 79px;
+    
+    
+}
+.nav-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 100px;
+}
+.logo {
+    padding: 30px;
+    width: 61.1px;
+    height: 19px;
+}   
+.nav-txt:hover {
+    color: #0065FC;
+    cursor: pointer;
+}
+.nav-lien:hover {
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
+    
+}
+
+/****** Barre de recherche *****/
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    
+    
+}
+
+button , .search-form , #site-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    
+}
+
+button {
+    
+    border: 1px solid #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px 16px;
+    background-color: #0065FC;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    width: 132px;
+    cursor: pointer;
+    
+}
+
+.search-form {
+    background-color: #F2F2F2;
+    width: 60px;
+    height: 49px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#site-search {
+    
+    height: 49px;
+    border: 1px solid #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    width: 197px;
+    cursor: text;
+}
+
+/******Filtre*******/
+.Filterbar {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+.box {
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
+    margin-left: 15px;
+}
+.box:hover {
+    background-color: #DEEBFF;
+   
+    
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -70,7 +207,23 @@ body {
 .hebergements {
     width: 65%;
 }
+.hebergement-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.hebergement-card img {
+    width: 100%;
+    height: 124px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.section-subtitle {
+    font-size: 18px;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -116,6 +269,58 @@ body {
     margin-bottom: 5px;
 }
 
+/*****Activite*****/
+.activite {
+    padding: 30px;
+}
+.activite .section-title {
+    padding-bottom: 30px;
+}
+ 
+.activite-card .card {
+    padding: 0;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+}
+.activite-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    
+}
+.activite-card img {
+    width: 100%;
+    height: 390px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activite-card .card-title {
+    padding: 20px 19px 20px 19px;
+    margin: 0;
+}
+
+/******* Footer *******/
+
+.table {
+    background-color: #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.table-contend {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+   
+.table-title{
+    font-size: 18px;
+    
+}
+
+.table-cell {
+    font-size: 16px;
+    font-weight: 500;
+}
 
 
 
